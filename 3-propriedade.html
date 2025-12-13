@@ -17,18 +17,34 @@
 
     <script type="text/babel">
 
-        function Button() {
+        const buttonVariants = {
+            default: 'bg-gray-500',
+            primary: 'bg-purple-500'
+        }
+
+        function Button({ variant = 'default', children, className, ...props }) {
             return (
-                <button className="px-3 py-2 bg-purple-500 rounded text-white">
-                    Botão
+                <button className={`
+                    px-3 py-2 rounded text-white
+                    ${buttonVariants[variant]}
+                    ${className}
+                `}
+                    {...props}
+                >
+                    {children}
+
                 </button>)
         }
 
         function App() {
             return (
                 <main className=" flex gap-2 p-3">
-                    <Button />
-                    <Button />
+                    <Button title="meu botão" className="mr-14">
+                        Meu botão
+                    </Button>
+                    <Button variant="primary">
+                        Outro Botão
+                    </Button>
                 </main>)
         }
 
