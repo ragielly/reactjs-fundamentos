@@ -174,12 +174,46 @@
                 </Card>
             )
         }
+
+        function OperationHistory() {
+            return (
+                <Card className="w-full py-10 px-8">
+                    <Text
+                        as="h1"
+                        variant="heading"
+                        className="mb-6"
+                    >
+                        Histórico de Operações
+                    </Text>
+
+                    <ul className="flex flex-col gap-4">
+                        <Text as="li">1 + 1 = 2</Text>
+                        <Text as="li">2 + 3 + 1 = 6</Text>
+                        <Text as="li">2 + 3 = 5</Text>
+                    </ul>
+                </Card>
+
+            )
+
+        }
+
         function App() {
 
             return (
-                <main className="py-28 px-4">
-                    <Calculator />
+                <main className="
+                min-h-screen
+                flex items-start justify-center
+                py-28 px-4
+                ">
+                    <div className="
+                    flex flex-col gap-8
+                    w-full max-w-[22.25rem]
+                    ">
+                        <Calculator />
+                        <OperationHistory />
+                    </div>
                 </main>
+
             )
         }
 
