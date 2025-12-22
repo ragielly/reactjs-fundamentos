@@ -1,4 +1,4 @@
-# 🦋 ReactJS Fundamentos
+# ReactJS Fundamentos
 <p align="center">
   <img src="https://img.shields.io/badge/language-HTML%20%26%20JS-blue.svg" alt="Linguagens">
   <img src="https://img.shields.io/badge/framework-ReactJS-blueviolet.svg" alt="ReactJS">
@@ -64,4 +64,5 @@ Desenvolvido por gy 👩‍💻
 Aprendendo e praticando os fundamentos de ReactJS para se tornar uma desenvolvedora front-end mais forte.
 
 <p align="center"> <img src="https://img.shields.io/badge/feito%20com%20💙-por%20gy-blue" alt="Feito com amor por gy"> </p> ```
+
 
